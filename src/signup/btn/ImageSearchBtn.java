@@ -2,6 +2,7 @@ package signup.btn;
 
 import javafx.scene.Parent;
 
+// 회원가입 페이지에서 사진 불러오기 버튼 클래스
 public class ImageSearchBtn {
 	Parent root;
 	

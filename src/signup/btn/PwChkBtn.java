@@ -4,6 +4,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 
+// 회원가입 페이지에서 비밀번호 체크버튼 클릭 이벤트 클래스
 public class PwChkBtn {
 	Parent root;
 	

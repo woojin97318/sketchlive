@@ -3,6 +3,7 @@ package common;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 
+// 창 닫기 클래스
 public class Exit{
 	Parent root;
 

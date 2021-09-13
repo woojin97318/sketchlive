@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+// 회원가입 페이지에서 닉네임 체크버튼 클릭 이벤트 클래스
 public class NickChkBtn {
 	Parent root;
 	DBClass db = new DBClass();

@@ -1,5 +1,21 @@
 package room;
 
-public class RoomController {
+import java.net.URL;
+import java.util.ResourceBundle;
 
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+
+// 게임 입장시 페이지 컨트롤러 클래스
+public class RoomController implements Initializable {
+	Parent root;
+	
+	public void setRoot(Parent root) {
+		this.root = root;
+	}
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		
+	}
 }

@@ -14,6 +14,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
+// 회원가입 페이지에서 회원가입 버튼 클릭 이벤트 클래스
 public class SignUpBtn {
 	Parent root;
 	DBClass db = new DBClass();
