@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
 
+<AnchorPane prefHeight="172.0" prefWidth="374.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="signin.SignInController">
+   <children>
+      <Label layoutX="50.0" layoutY="39.0" text="게임이름 (라벨은 삭제예정, 이부분은 이미지로 처리" />
+      <TextField fx:id="signInId" layoutX="79.0" layoutY="85.0" promptText="ID" />
+      <PasswordField fx:id="signInPw" layoutX="79.0" layoutY="118.0" promptText="PW" />
+      <Button layoutX="249.0" layoutY="118.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="22.0" prefWidth="61.0" text="Login" />
+      <Button layoutX="249.0" layoutY="85.0" mnemonicParsing="false" onAction="#SignUpBtn" prefHeight="22.0" prefWidth="61.0" text="SignUp" />
+   </children>
+</AnchorPane>
