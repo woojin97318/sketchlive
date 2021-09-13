@@ -1,7 +1,5 @@
 package main;
 
-import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,7 +10,7 @@ import signin.SignInController;
 public class MainClass extends Application {
 
 	@Override
-	public void start(Stage primaryStage) throws IOException {
+	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader =
 				new FXMLLoader(getClass().getResource("../signin/signInView.fxml"));
 		Parent root = loader.load();

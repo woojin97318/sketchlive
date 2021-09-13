@@ -7,29 +7,35 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="525.0" prefWidth="259.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="signup.SignUpController">
+<AnchorPane prefHeight="525.0" prefWidth="259.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.SignUpController">
    <children>
       <Label layoutX="64.0" layoutY="41.0" text="회원가입(이미지로 대체)" />
-      <ImageView fitHeight="81.0" fitWidth="90.0" layoutX="85.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="105.0" layoutY="177.0" mnemonicParsing="false" text="search" />
-      <TextField layoutX="22.0" layoutY="220.0" promptText="ID" />
-      <Button layoutX="193.0" layoutY="220.0" mnemonicParsing="false" text="Check" />
-      <PasswordField layoutX="22.0" layoutY="249.0" promptText="Pw" />
-      <PasswordField layoutX="22.0" layoutY="278.0" promptText="PW Check" />
-      <Button layoutX="193.0" layoutY="278.0" mnemonicParsing="false" text="Check" />
-      <TextField layoutX="22.0" layoutY="319.0" promptText="nickname" />
-      <Button layoutX="193.0" layoutY="319.0" mnemonicParsing="false" text="Check" />
-      <ComboBox layoutX="22.0" layoutY="386.0" prefHeight="22.0" prefWidth="215.0" promptText="Age" />
-      <RadioButton layoutX="48.0" layoutY="357.0" mnemonicParsing="false" text="Man">
+      <ImageView fitHeight="81.0" fitWidth="90.0" layoutX="85.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Bloom />
+         </effect></ImageView>
+      <Button layoutX="105.0" layoutY="177.0" mnemonicParsing="false" onAction="#imageSearchBtn" text="search" />
+      <TextField fx:id="signupId" layoutX="22.0" layoutY="209.0" promptText="ID" />
+      <Button layoutX="193.0" layoutY="209.0" mnemonicParsing="false" onAction="#idChkBtn" text="Check" />
+      <PasswordField fx:id="signupPw" layoutX="22.0" layoutY="254.0" promptText="Pw" />
+      <PasswordField fx:id="signupPwChk" layoutX="22.0" layoutY="278.0" promptText="PW Check" />
+      <Button layoutX="193.0" layoutY="278.0" mnemonicParsing="false" onAction="#pwChkBtn" text="Check" />
+      <TextField fx:id="signupNick" layoutX="22.0" layoutY="319.0" promptText="nickname" />
+      <Button layoutX="193.0" layoutY="319.0" mnemonicParsing="false" onAction="#nickChkBtn" text="Check" />
+      <ComboBox fx:id="cmbAge" layoutX="22.0" layoutY="386.0" prefHeight="22.0" prefWidth="215.0" promptText="Age" />
+      <RadioButton fx:id="rdoMan" layoutX="48.0" layoutY="357.0" mnemonicParsing="false" selected="true" text="Man">
          <toggleGroup>
             <ToggleGroup fx:id="gender" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="133.0" layoutY="357.0" mnemonicParsing="false" text="Woman" toggleGroup="$gender" />
-      <Button layoutX="107.0" layoutY="468.0" mnemonicParsing="false" text="SignUp" />
+      <RadioButton fx:id="rdoWoman" layoutX="133.0" layoutY="357.0" mnemonicParsing="false" text="Woman" toggleGroup="$gender" />
+      <Button layoutX="107.0" layoutY="468.0" mnemonicParsing="false" onAction="#signupBtn" text="SignUp" />
+      <Label fx:id="idChkLabel" layoutX="22.0" layoutY="231.0" prefHeight="14.0" prefWidth="161.0" />
+      <Label fx:id="pwChkLabel" layoutX="22.0" layoutY="300.0" prefHeight="14.0" prefWidth="161.0" />
+      <Label fx:id="nickChkLabel" layoutX="22.0" layoutY="341.0" prefHeight="14.0" prefWidth="161.0" />
    </children>
 </AnchorPane>
