@@ -14,11 +14,11 @@
 <AnchorPane prefHeight="525.0" prefWidth="259.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.SignUpController">
    <children>
       <Label layoutX="64.0" layoutY="41.0" text="회원가입(이미지로 대체)" />
-      <ImageView fitHeight="81.0" fitWidth="90.0" layoutX="85.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="87.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
          <effect>
             <Bloom />
          </effect></ImageView>
-      <Button layoutX="105.0" layoutY="177.0" mnemonicParsing="false" onAction="#imageSearchBtn" text="search" />
+      <Button layoutX="105.0" layoutY="170.0" mnemonicParsing="false" onAction="#imageSearchBtn" text="search" />
       <TextField fx:id="signupId" layoutX="22.0" layoutY="209.0" promptText="ID" />
       <Button layoutX="193.0" layoutY="209.0" mnemonicParsing="false" onAction="#idChkBtn" text="Check" />
       <PasswordField fx:id="signupPw" layoutX="22.0" layoutY="254.0" promptText="Pw" />
