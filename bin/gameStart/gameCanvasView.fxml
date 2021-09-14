@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
+   <children>
+      <Pane layoutX="1079.0" layoutY="26.0" prefHeight="849.0" prefWidth="493.0" style="-fx-background-color: skyblue;">
+         <children>
+            <Label fx:id="timeLabel" layoutX="198.0" layoutY="306.0" text="? : ? : ?">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ProgressIndicator fx:id="timeProgress" layoutX="173.0" layoutY="138.0" minHeight="150.0" minWidth="150.0" prefHeight="100.0" prefWidth="100.0" progress="0.0" />
+            <Button fx:id="saveCanvas" layoutX="160.0" layoutY="702.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="184.0" text="저   장">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <ColorPicker fx:id="colorPick" layoutX="175.0" layoutY="429.0" prefHeight="43.0" prefWidth="160.0">
+               <value>
+                  <Color />
+               </value>
+            </ColorPicker>
+            <Button fx:id="deleteAll" layoutX="160.0" layoutY="594.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="184.0" text="모두 지우기">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Slider fx:id="penWidth" layoutX="133.0" layoutY="364.0" prefHeight="52.0" prefWidth="247.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+            <Button fx:id="eraser" layoutX="158.0" layoutY="516.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="184.0" text="지우개">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Label contentDisplay="CENTER" layoutX="51.0" layoutY="370.0" text="펜 굵기" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="labelSub" contentDisplay="CENTER" layoutX="335.0" layoutY="56.0" text="주제, 장답 출력" textAlignment="CENTER">
+         <font>
+            <Font size="61.0" />
+         </font>
+      </Label>
+      <Canvas fx:id="canvas" height="682.0" layoutX="20.0" layoutY="194.0" width="1039.0" />
+   </children>
+</AnchorPane>
